@@ -1,0 +1,18 @@
+{
+  "name": "nodejsdocker",
+  "version": "1.0.0",
+  "description": "nodeJs App with Docker",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon -L app.js"
+  },
+  "author": "Azhandi Usemahu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
