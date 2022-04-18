@@ -19,4 +19,11 @@
 
 ### Easy running image
  + to run the container easily, simply run: `docker-compose up -d` on root project.
-  + To take it down, run command: `docker-compose down -v`.
+ + To take it down, run command: `docker-compose down -v`.
+
+### Separate development and production stage
+ + Run in dev mode: `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d`
+ + Run in dev mode and rebuild: `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build`
+ + Run in prod mode: `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
++ Run in prod mode and rebuild: `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build`
++ Take down: `docker-compose -f docker-compose.yml -f docker-compose.<stage>.yml down -v`.
